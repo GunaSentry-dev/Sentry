@@ -1,0 +1,54 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+/* @import "tailwindcss/preflight.css" layer(base); */ 
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    /* Define custom colors */
+    --color-primary: #f26d21;
+    --color-primary-darken-1: #d55308;
+    --color-secondary: #3097f3;
+    --color-secondary-darken-1: #1271c6;
+    --color-tertiary: #0e4678;
+    --color-tertiary-lighten-1: #e5f2ff;
+    --color-tertiary-lighten-2: #e9f0f7;
+    --color-tertiary-lighten-3: #fbfdff;
+    --color-tertiary-lighten-4: #f0f6fc;
+    --color-orange: #f26d21;
+    --color-orange-lighten-1: #fef6f2;
+    --color-black: #142535;
+    --color-grey: #4c6177;
+    --color-grey-lighten-1: #94a9c3;
+    --color-grey-lighten-2: #c4d2e4;
+    --color-grey-lighten-3: #f4f6f8;
+    --color-count: #11a5af;
+    --color-count-lighten-1: #e9feff;
+    --color-success: #299b3f;
+    --color-success-lighten-1: #edfaf0;
+    --color-success-lighten-2: #d9f2de;
+    --color-purple: #3a0c75;
+    --color-purple-lighten-1: #f8f3ff;
+    --color-error: #e82a21;
+    --color-error-lighten-1: #fff4f4;
+    --color-error-lighten-2: #f7cdcd;
+    --color-info: #0055b6;
+    --color-info-lighten-1: #dde9fa;
+    --color-info-lighten-2: #f1f7ff;
+    --color-note: #e9ae31;
+    --color-note-lighten-1: #fdf1d5;
+    --color-note-lighten-2: #fff9eb;
+    --color-warning: #9a6700;
+    --color-warning-lighten-1: #f8dfbb;
+    --color-warning-lighten-2: #fff0da;
+    --color-link: #0e4678;
+    --color-disable: #f2f6fa;
+    --color-white: #ffffff;
+    --color-header-border: #cbddee;
+  
+    /* Define custom fonts */
+    --font-display: "Satoshi", sans-serif;
+    --font-body: "Inter", sans-serif;
+  
+    /* Define custom breakpoints */
+    --breakpoint-3xl: 1920px;
+  }
