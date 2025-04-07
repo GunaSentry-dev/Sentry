@@ -16,6 +16,7 @@ const resolver = zodResolver(schema);
 export const action = async ({ request }: ActionFunctionArgs) => {
   const { errors, data, receivedValues: defaultValues } =
     await getValidatedFormData<FormData>(request, resolver);
+     throw new Error("welcome to server");
   if (errors) {
     // The keys "errors" and "defaultValues" are picked up automatically by useRemixForm
     return JSON.stringify({ errors, defaultValues });

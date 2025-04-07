@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { useEffect } from "react";
 import DefaultLayout from "~/layouts/DefaultLayout";
 
 export const meta: MetaFunction = () => {
@@ -9,6 +10,11 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+
+  useEffect(()=>{
+     throw new Error("welcome to github");
+  },[])
+
   return (
     <DefaultLayout>
     <div className="flex h-screen items-center justify-center">
