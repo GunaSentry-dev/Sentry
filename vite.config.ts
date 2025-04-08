@@ -28,7 +28,11 @@ const config:UserConfig = {
   }), tsconfigPaths(), tailwindcss(), sentryVitePlugin({
     org: "sentry",
     project: "javascript-remix",
-    url: "https://dev-sentry.spanllc.com/"
+    url: "https://dev-sentry.spanllc.com/",
+    authToken: process.env.SENTRY_AUTH_TOKEN,
+    sourcemaps:{
+      filesToDeleteAfterUpload: []
+    }
   })],
 
   resolve:{
