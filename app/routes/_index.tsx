@@ -11,9 +11,6 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 
-  useEffect(()=>{
-     throw new Error("welcome to github");
-  },[])
 
   return (
     <DefaultLayout>
